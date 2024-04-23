@@ -1,0 +1,200 @@
+@font-face{
+    font-family: 'better vcr';
+    src: local('better vcr'),
+    url(../font/better-vcr.ttf) format('truetype');
+}
+
+@media print and (max-width: 768px) {
+  audio, header, #block-music {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    #localization {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+}
+
+#tslogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(200deg);
+}
+
+#localization {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    padding: 1%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.left {
+    flex: 1;
+    padding: 1%;
+    border: 1px solid white;
+    width: 50%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+    border: 1px solid white;
+    width: 50%;
+}
+
+#block {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    padding: 1%;
+    max-width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+#block-language {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    padding: 1%;
+    max-width: 200px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.titleimg {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-image: url(../img/bg.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'better vcr', sans-serif;
+    color: purple;
+    padding: 3%;
+}
+
+header {
+    text-align: center; 
+}
+
+.section {
+    text-align: left;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5px;
+}
+
+.flex-item {
+    padding: 1px;
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.footer {
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    padding: 10px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: purple;
+}
+
+audio::-webkit-media-controls-play-button{
+    background-color: lightskyblue;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display{
+    color: lightskyblue;
+}
+
+audio::-webkit-media-controls-time-remaining-display{
+    color: lightskyblue;
+}
+
+audio::-webkit-media-controls-timeline{
+    border-radius: 40px;
+    background-color: lightskyblue;
+}
+
+audio::-webkit-media-controls-volume-slider{
+    border-radius: 50px;
+    background-color: lightskyblue;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+audio::-webkit-media-controls-mute-button{
+    background-color: lightskyblue;
+    border-radius: 50%;
+}
+
+input {
+    font-family: 'better vcr', sans-serif;
+    color: white;
+    padding: 1px;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    height: 25px;
+    margin: 0 auto;
+}
+
+#subscribe-button {
+    font-family: 'better vcr', sans-serif;
+    color: white;
+    padding: 1px;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    height: 31px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#block-subscribe {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    padding: 1%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#block-music {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid white;
+    padding: 1%;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 80px;
+}
